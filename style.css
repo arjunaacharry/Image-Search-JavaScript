@@ -86,3 +86,17 @@ form{
     text-transform: capitalize;
 }
 
+#show-more-button{
+    background-color: #008cba;
+    font-size: 18px;
+    border: none;
+    color: #ffff;
+    padding: 10px 20px;
+    text-align: center;
+    display: block;
+    margin: 30px auto;
+    border-radius: 5px;
+    cursor: pointer;
+    /* display: none; */
+}
+
