@@ -1,5 +1,4 @@
-// Update this line to use process.env.ACCESS_KEY
-const accessKey = process.env.ACCESS_KEY || "fallback_api_key";
+const accessKey = "0XdJjcs014VnQkwywZkXo5QvREs5DlQf2lVhIuZF8gE"
 
 const formEl = document.querySelector("form");
 const inputEl = document.getElementById("search-input");
@@ -29,10 +28,10 @@ async function searchImages() {
         image.src = result.urls.small;
         image.alt = result.alt_description;
         const imageLink = document.createElement('a');
-        imageLink.href = result.links.innerhtml;
+        imageLink.href = result.links.html; // Corrected line
         imageLink.target = "_blank";
         imageLink.textContent = result.alt_description;
-
+    
         imageWrapper.appendChild(image);
         imageWrapper.appendChild(imageLink);
         searchResults.appendChild(imageWrapper);  // Corrected line
